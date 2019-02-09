@@ -6,7 +6,7 @@
 // @author       kuai
 // @include      /^https?:\/\/www\.bilibili\.com\/.*
 // @grant        none
-// @license            MIT License
+// @license      MIT License
 // ==/UserScript==
 
 
