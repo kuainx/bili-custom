@@ -12,7 +12,6 @@
 
 (function() {
     'use strict';
-
     var speedcontrol = document.createElement("span");
     var input = document.createElement("input");
     input.type = "text";
@@ -25,7 +24,5 @@
     speedcontrol.appendChild(input);
     speedcontrol.style.position="fixed";
     speedcontrol.style.top="50%";
-    document.querySelectorAll("#video-page-app")[0].appendChild(speedcontrol);
-    //console.log(document.querySelector(".ops"));
-    
+    document.querySelectorAll("body")[0].appendChild(speedcontrol);
 })();
