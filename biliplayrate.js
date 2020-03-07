@@ -79,10 +79,12 @@
     }
     document.addEventListener('scroll',scrollStyle);
     setTimeout(scrollStyle, 2000);
-    if(window.location.href.indexOf("video")>0){
+    if(window.location.href.indexOf("video")>0 || window.location.href.indexOf("bangumi")>0){
         document.addEventListener('scroll',readyt);
         setTimeout(readyt, 2000);
-        document.addEventListener('scroll',hideWide);
-        setTimeout(hideWide, 2000);
+        // document.addEventListener('scroll',hideWide);
+        // setTimeout(hideWide, 2000);
+        // setTimeout(hideWide, 5000);
+        setInterval(hideWide,500);
     }
 })();
