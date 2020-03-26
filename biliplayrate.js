@@ -76,6 +76,20 @@
     function hideWide(){
         let s = document.querySelector(".bilibili-player-video-btn-widescreen");
         s && s.style.setProperty('display', 'none', 'important');
+        s = document.querySelector("#bilibili_pbp_panel");
+        s && s.style.setProperty('display', 'none', 'important');
+        s = document.querySelector(".bilibili-player-video-btn-repeat");
+        s && s.style.setProperty('display', 'none', 'important');
+        s = document.querySelector(".bilibili-player-video-btn-pip");
+        s && s.style.setProperty('display', 'none', 'important');
+        s = document.querySelector(".bilibili-player-video-hint");
+        s && s.style.setProperty('display', 'none', 'important');
+        s = document.querySelector(".bilibili-player-video-control-bottom-center");
+        s && s.style.setProperty('padding', '0', 'important');
+        s = document.querySelector(".bilibili-player-video-inputbar");
+        s && s.style.setProperty('margin', '0', 'important');
+        s && s.style.setProperty('with', '210px', 'important');
+        
     }
     document.addEventListener('scroll',scrollStyle);
     setTimeout(scrollStyle, 2000);
