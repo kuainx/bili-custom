@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bilibili视频自定义脚本
 // @namespace    kuai
-// @version      1.31
+// @version      1.33
 // @description  自定义播放速度，隐藏宽屏，滚动条自定义
 // @author       kuai
 // @include      /^https?:\/\/www\.bilibili\.com\/.*
@@ -84,12 +84,19 @@
         s && s.style.setProperty('display', 'none', 'important');
         s = document.querySelector(".bilibili-player-video-hint");
         s && s.style.setProperty('display', 'none', 'important');
+        // s = document.querySelector(".bilibili-player-video-danmaku-setting");
+        // s && s.style.setProperty('display', 'none', 'important');
         s = document.querySelector(".bilibili-player-video-control-bottom-center");
+        s && s.style.setProperty('padding', '0', 'important');
+        s = document.querySelector(".bilibili-player-video-btn-start");
+        s && s.style.setProperty('padding', '0', 'important');
+        s = document.querySelector(".bilibili-player-video-danmaku-switch");
         s && s.style.setProperty('padding', '0', 'important');
         s = document.querySelector(".bilibili-player-video-inputbar");
         s && s.style.setProperty('margin', '0', 'important');
-        s && s.style.setProperty('with', '210px', 'important');
-        
+        s && s.style.setProperty('width', '210px', 'important');
+         s = document.querySelector(".bilibili-player-video-control-bottom-left");
+        s && s.style.setProperty('min-width', '260px', 'important');
     }
     document.addEventListener('scroll',scrollStyle);
     setTimeout(scrollStyle, 2000);
