@@ -1,4 +1,18 @@
-# bili-playrate
+# bili-custom
+bilibili视频自定义脚本
+
+用于自定义一些内容
+
+目前功能：将缓存条变成绿色
+
+倍速功能请用bili evolved
+
+
+
+---
+
+
+
 油猴脚本，用于自定义修改Biliplayer播放速度（于新版本测试）
 
 ## 食用方法
